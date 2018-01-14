@@ -13,7 +13,7 @@ html {
 
 header {
   background-image: url(/Users/sajover/Documents/Proyectos/tortoiseshell_optics2/resources/images/glasses-bg.png);
-  background-position: center;
+  background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 30rem;
@@ -21,8 +21,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-
+@media only screen and (max-width:960px) {
+  header {
+    height: 22rem;
+    padding-top: 0rem;
+  }
 }
 
 nav {
@@ -79,6 +84,19 @@ h1  {
   line-height: 1.2;
 }
 
+@media only screen and (max-width:960px){
+  .claim {
+    margin-top: 5rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+
+
+
 /* ICONS */
 
 .background {
@@ -127,8 +145,6 @@ h1  {
   flex-direction: row;
   justify-content: center;
   margin-bottom: 5rem;
-  border: 3px solid red;
-
 }
 
 .box {
