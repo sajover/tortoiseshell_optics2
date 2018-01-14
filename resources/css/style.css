@@ -10,6 +10,11 @@ html {
   width: 960px;
 }
 
+@media only screen and (max-width: 470px) {
+  .container {
+    width: 470px;
+  }
+}
 
 header {
   background-image: url(/Users/sajover/Documents/Proyectos/tortoiseshell_optics2/resources/images/glasses-bg.png);
@@ -30,6 +35,13 @@ header {
   }
 }
 
+@media only screen and (max-width:470px){
+  header{
+    height: 17rem;
+    background-position: left;
+  }
+}
+
 nav {
   background-color: cadetblue;
   display: flex;
@@ -38,6 +50,8 @@ nav {
   width: 100%;
   padding: 1rem 0rem;
 }
+
+
 
 .logo {
   display: flex;
@@ -64,6 +78,23 @@ ul{
 
 li {
   margin-right: 2rem;
+}
+
+span.mobile-screen {
+  display: none;
+}
+
+@media only screen and (max-width:470px){
+  ul {
+    display: none;
+  }
+  .logo span {
+    display: none;
+  }
+  span.mobile-screen {
+    display: inline;
+    padding-right: 2rem;
+  }
 }
 
 .banner {
@@ -95,6 +126,19 @@ h1  {
   }
 }
 
+@media only screen and (max-width:470px){
+  .claim {
+    margin-top: 9rem;
+    padding: 1rem;
+    width: 100%;
+    margin-right: 0rem;
+  }
+
+  h1  {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
 
 
 /* ICONS */
@@ -138,6 +182,28 @@ h1  {
   text-align: center;
 }
 
+@media only screen and (max-width:470px){
+  .icons {
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem 0rem;
+  }
+  .icon {
+    height: auto;
+    margin: 0rem;
+    padding: 0rem;
+  }
+  .icon.paper, .icon.ruler {
+    margin-right: 0rem;
+    margin-bottom: 1.54rem;
+  }
+
+  .icon span {
+    font-size: 0.77rem;
+    padding-top: 0.75rem;
+  }
+}
+
 /* about */
 
 .about {
@@ -164,6 +230,29 @@ h1  {
   margin-right: 5%;
 }
 
+@media only screen and (max-width:470px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    width: 100%;
+  }
+  .box h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .box p {
+    font-size: 0.77rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .philosophy.box{
+    margin-right: 0px;
+    margin-bottom: 4rem;
+  }
+}
+
 /* footer */
 
 footer {
@@ -184,4 +273,12 @@ footer img {
 }
 footer span {
   color: black;
+}
+
+@media only screen and (max-width:470px){
+.copyright {
+  justify-content: center;
+}
+.copyright span {display: none;}
+
 }
